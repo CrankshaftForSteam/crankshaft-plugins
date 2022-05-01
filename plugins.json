@@ -1,0 +1,13 @@
+{
+	"plugins": [
+		{
+			"id": "protondb-indicator",
+			"name": "ProtonDB Indicator",
+			"version": "0.1",
+			"author": "Avery",
+			"source": "https://git.sr.ht/~avery/protondb-indicator",
+			"archive": "https://git.sr.ht/~avery/protondb-indicator/refs/download/1.0/protondb-indicator-1.0.tar.gz",
+			"sha256": "095097d46a4c426f391c5416115a049c3419a34d65ee48deef26b920daa74358"
+		}
+	]
+}
