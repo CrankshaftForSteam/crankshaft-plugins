@@ -8,6 +8,15 @@
 			"source": "https://git.sr.ht/~avery/protondb-indicator",
 			"archive": "https://git.sr.ht/~avery/protondb-indicator/refs/download/1.0/protondb-indicator-1.0.tar.gz",
 			"sha256": "b7bef0ae7dc06be5c1b7a8f35ff57ef932f3a1c7a1e8fe5aaf97c3d73d84edf2"
+		},
+		{
+			"id": "compatibility-tools-manager",
+			"name": "Compatibility Tools Manager",
+			"version": "0.1",
+			"author": "Avery",
+			"source": "https://git.sr.ht/~avery/compatibility-tools-manager",
+			"archive": "https://git.sr.ht/~avery/compatibility-tools-manager/refs/download/0.1/compatibility-tools-manager-0.1.tar.gz",
+			"sha256": "de83b2fd9276e92f3499ac52d283c33da60c2b17146c28b430164449ce7ef6d6"
 		}
 	]
 }
