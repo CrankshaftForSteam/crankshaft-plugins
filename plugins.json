@@ -3,11 +3,11 @@
 		{
 			"id": "protondb-indicator",
 			"name": "ProtonDB Indicator",
-			"version": "0.1",
+			"version": "1.0",
 			"author": "Avery",
 			"source": "https://git.sr.ht/~avery/protondb-indicator",
 			"archive": "https://git.sr.ht/~avery/protondb-indicator/refs/download/1.0/protondb-indicator-1.0.tar.gz",
-			"sha256": "095097d46a4c426f391c5416115a049c3419a34d65ee48deef26b920daa74358"
+			"sha256": "b7bef0ae7dc06be5c1b7a8f35ff57ef932f3a1c7a1e8fe5aaf97c3d73d84edf2"
 		}
 	]
 }
