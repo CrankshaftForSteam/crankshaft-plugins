@@ -17,6 +17,24 @@
 			"source": "https://git.sr.ht/~avery/compatibility-tools-manager",
 			"archive": "https://git.sr.ht/~avery/compatibility-tools-manager/refs/download/0.1/compatibility-tools-manager-0.1.tar.gz",
 			"sha256": "de83b2fd9276e92f3499ac52d283c33da60c2b17146c28b430164449ce7ef6d6"
+		},
+		{
+			"id": "improved-lock-screen",
+			"name": "Improved Lock Screen",
+			"version": "1",
+			"author": "Avery",
+			"source": "https://git.sr.ht/~avery/improved-lock-screen",
+			"archive": "https://git.sr.ht/~avery/improved-lock-screen/refs/download/1/improved-lock-screen-1.tar.gz",
+			"sha256": "5aeae44cb0fddf27c96d6cf9f25c97bd347d1ff218f6b264bc1c0af9bbe84e48"
+		},
+		{
+			"id": "battery-percentage",
+			"name": "Battery Percentage",
+			"version": "1",
+			"author": "Avery",
+			"source": "https://git.sr.ht/~avery/battery-percentage",
+			"archive": "https://git.sr.ht/~avery/battery-percentage/refs/download/1/battery-percentage-1.tar.gz",
+			"sha256": "715db15bc98f5d5de9b2d402a529195028685dbb6260b00d6c14f12b97e2051b"
 		}
 	]
 }
