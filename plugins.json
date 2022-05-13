@@ -12,11 +12,11 @@
 		{
 			"id": "compatibility-tools-manager",
 			"name": "Compatibility Tools Manager",
-			"version": "0.1",
+			"version": "0.2",
 			"author": "Avery",
 			"source": "https://git.sr.ht/~avery/compatibility-tools-manager",
-			"archive": "https://git.sr.ht/~avery/compatibility-tools-manager/refs/download/0.1/compatibility-tools-manager-0.1.tar.gz",
-			"sha256": "de83b2fd9276e92f3499ac52d283c33da60c2b17146c28b430164449ce7ef6d6"
+			"archive": "https://git.sr.ht/~avery/compatibility-tools-manager/refs/download/0.2/compatibility-tools-manager-0.2.tar.gz",
+			"sha256": "de1aaa4d10232557d3ab1a815010e0d5f6705b45c1dd9c4915fc2fd271992712"
 		},
 		{
 			"id": "improved-lock-screen",
