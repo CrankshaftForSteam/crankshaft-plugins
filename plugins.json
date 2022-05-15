@@ -21,11 +21,11 @@
 		{
 			"id": "improved-lock-screen",
 			"name": "Improved Lock Screen",
-			"version": "1",
+			"version": "1.1",
 			"author": "Avery",
 			"source": "https://git.sr.ht/~avery/improved-lock-screen",
-			"archive": "https://git.sr.ht/~avery/improved-lock-screen/refs/download/1/improved-lock-screen-1.tar.gz",
-			"sha256": "5aeae44cb0fddf27c96d6cf9f25c97bd347d1ff218f6b264bc1c0af9bbe84e48"
+			"archive": "https://git.sr.ht/~avery/improved-lock-screen/refs/download/1.1/improved-lock-screen-1.1.tar.gz",
+			"sha256": "6bee1a0fef06d2c20a6f9022e678e9e648635da3284f7225dc93f112de6ccc23"
 		},
 		{
 			"id": "battery-percentage",
