@@ -35,6 +35,15 @@
 			"source": "https://git.sr.ht/~avery/battery-percentage",
 			"archive": "https://git.sr.ht/~avery/battery-percentage/refs/download/1/battery-percentage-1.tar.gz",
 			"sha256": "715db15bc98f5d5de9b2d402a529195028685dbb6260b00d6c14f12b97e2051b"
+		},
+		{
+			"id": "recapture",
+			"name": "Recapture",
+			"version": "0.1.1",
+			"author": "Avery",
+			"source": "https://git.sr.ht/~avery/recapture/tree/main/item/plugin",
+			"archive": "https://git.sr.ht/~avery/recapture/refs/download/plugin-0.1.1/recapture-0.1.1.tar.gz",
+			"sha256": "2065554b103807647d424c38447e19938a68375ce785fb3526d85148a12781b1"
 		}
 	]
 }
