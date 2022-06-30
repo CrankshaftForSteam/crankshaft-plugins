@@ -39,12 +39,12 @@
 		{
 			"id": "recapture",
 			"name": "Recapture",
-			"version": "0.1.1",
+			"version": "0.1.2",
 			"author": "Avery",
 			"minCrankshaftVersion": "0.1.5",
 			"source": "https://git.sr.ht/~avery/recapture/tree/main/item/plugin",
-			"archive": "https://git.sr.ht/~avery/recapture/refs/download/plugin-0.1.1/recapture-0.1.1.tar.gz",
-			"sha256": "2065554b103807647d424c38447e19938a68375ce785fb3526d85148a12781b1"
+			"archive": "https://git.sr.ht/~avery/recapture/refs/download/plugin-0.1.2/recapture-0.1.2.tar.gz",
+			"sha256": "0bb68ecbebe81de247449625dd6ef315543204cdcbaa9a75ba69413f29c202d7"
 		}
 	]
 }
