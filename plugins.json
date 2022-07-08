@@ -45,6 +45,16 @@
 			"source": "https://git.sr.ht/~avery/recapture/tree/main/item/plugin",
 			"archive": "https://git.sr.ht/~avery/recapture/refs/download/plugin-0.1.2/recapture-0.1.2.tar.gz",
 			"sha256": "0bb68ecbebe81de247449625dd6ef315543204cdcbaa9a75ba69413f29c202d7"
+		},
+		{
+			"id": "HandyPT",
+			"name": "Handheld Power Tools",
+			"version": "0.1.0",
+			"author": "Derek J. Clark",
+			"minCrankshaftVersion": "0.1.5",
+			"source": "https://github.com/ShadowBlip/HandyPT",
+			"archive": "https://github.com/ShadowBlip/HandyPT/files/9067987/handy_pt-v0.1.0.tar.gz",
+			"sha256": "3863a952d379b32d288cd05664c2057ee3b9fffdafe845f292273729f8b1dfce"
 		}
 	]
 }
