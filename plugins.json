@@ -55,16 +55,6 @@
 			"source": "https://github.com/ShadowBlip/HandyPT",
 			"archive": "https://github.com/ShadowBlip/HandyPT/files/9075194/handy_pt-v0.1.1.tar.gz",
 			"sha256": "f1a3fdc171539a44700d42d68c1703b198edaf3b2d3667e7402a7a5ac717e70e"
-		},
-		{
-			"id": "proton-tools",
-			"name": "Proton Tools",
-			"version": "0.1.0",
-			"author": "Avery",
-			"minCrankshaftVersion": "0.2.0",
-			"source": "https://git.sr.ht/~avery/proton-tools",
-			"archive": "https://git.sr.ht/~avery/proton-tools/refs/download/0.1.0/proton-tools-0.1.0.tar.gz",
-			"sha256": "587dd1613d06cfe964ac7a0c64336526af201c5ec1aaef8a97ab46100b1ae4c8"
 		}
 	]
 }
