@@ -1,0 +1,19 @@
+image: archlinux
+packages:
+  - go
+  - lftp
+sources:
+  - https://git.sr.ht/~avery/crankshaft-plugins
+secrets:
+  - ad53556c-d437-47ec-8e69-8941af52378c
+tasks:
+- build: |
+    cd crankshaft-plugins
+    make run
+- upload: |
+    set +x
+    . ~/.secrets
+    cd crankshaft-plugins/out
+    lftp -u $FTP_USER,$FTP_PASSWORD $FTP_HOST -e "put plugins.json; bye"
+    curl --request POST --url https://api.bunny.net/pullzone/779149/purgeCache -H "AccessKey: $BCDN_KEY" -H "Content-Length: 0"
+    set -x
