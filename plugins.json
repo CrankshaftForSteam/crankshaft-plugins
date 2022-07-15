@@ -2,6 +2,8 @@
 	"plugins": [
 		{
 			"id": "protondb-indicator",
+			"repo": "https://git.sr.ht/~avery/protondb-indicator",
+
 			"name": "ProtonDB Indicator",
 			"version": "1.0",
 			"author": "Avery",
@@ -11,6 +13,8 @@
 		},
 		{
 			"id": "compatibility-tools-manager",
+			"repo": "https://git.sr.ht/~avery/compatibility-tools-manager",
+
 			"name": "Compatibility Tools Manager",
 			"version": "0.2.1",
 			"author": "Avery",
@@ -20,6 +24,8 @@
 		},
 		{
 			"id": "improved-lock-screen",
+			"repo": "https://git.sr.ht/~avery/improved-lock-screen",
+
 			"name": "Improved Lock Screen",
 			"version": "1.1-1",
 			"author": "Avery",
@@ -29,6 +35,8 @@
 		},
 		{
 			"id": "battery-percentage",
+			"repo": "https://git.sr.ht/~avery/battery-percentage",
+
 			"name": "Battery Percentage",
 			"version": "1",
 			"author": "Avery",
@@ -38,6 +46,9 @@
 		},
 		{
 			"id": "recapture",
+			"repo": "https://git.sr.ht/~avery/recapture",
+			"pluginConfigPath": "plugin/plugin.toml",
+
 			"name": "Recapture",
 			"version": "0.1.2",
 			"author": "Avery",
@@ -48,6 +59,8 @@
 		},
 		{
 			"id": "HandyPT",
+			"repo": "https://github.com/ShadowBlip/HandyPT",
+			
 			"name": "Handheld Power Tools (AyaNeo/OXP Device TDP Control)",
 			"version": "0.1.1",
 			"author": "Derek J. Clark",
