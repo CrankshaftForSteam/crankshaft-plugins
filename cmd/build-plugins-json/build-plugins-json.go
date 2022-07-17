@@ -33,12 +33,15 @@ type PluginConfig struct {
 	Link                 string `toml:"link" json:"link"`
 	Source               string `toml:"source" json:"source"`
 	MinCrankshaftVersion string `toml:"min-crankshaft-version" json:"minCrankshaftVersion"`
-	Description string `toml:"description" json:"description"`
 
 	Author struct {
 		Name string `toml:"name" json:"name"`
 		Link string `toml:"link" json:"link"`
 	} `toml:"author" json:"author"`
+
+	Store struct {
+		Description string `toml:"description" json:"description"`
+	} `toml:"store" json:"store"`
 }
 
 type OutputPlugins map[string]PluginConfig
