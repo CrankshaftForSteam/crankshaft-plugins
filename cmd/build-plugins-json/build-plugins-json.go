@@ -16,9 +16,14 @@ import (
 
 type InputPlugin struct {
 	Id               string `json:"id"`
-	Source           string `json:"source"`
 	Repo             string `json:"repo"`
 	PluginConfigPath string `json:"pluginConfigPath"`
+
+	Version string `json:"version"`
+	Archive string `json:"archive"`
+	Sha256  string `json:"sha256"`
+
+	Source string `json:"source"`
 }
 
 type InputFile struct {
@@ -27,6 +32,15 @@ type InputFile struct {
 
 const INPUT_FILE = "plugins.json"
 
+type author struct {
+	Name string `toml:"name" json:"name"`
+	Link string `toml:"link" json:"link"`
+}
+
+type store struct {
+	Description string `toml:"description" json:"description"`
+}
+
 type PluginConfig struct {
 	Name                 string `toml:"name" json:"name"`
 	Version              string `toml:"version" json:"version"`
@@ -34,17 +48,28 @@ type PluginConfig struct {
 	Source               string `toml:"source" json:"source"`
 	MinCrankshaftVersion string `toml:"min-crankshaft-version" json:"minCrankshaftVersion"`
 
-	Author struct {
-		Name string `toml:"name" json:"name"`
-		Link string `toml:"link" json:"link"`
-	} `toml:"author" json:"author"`
+	Author author `toml:"author" json:"author"`
 
-	Store struct {
-		Description string `toml:"description" json:"description"`
-	} `toml:"store" json:"store"`
+	Store store `toml:"store" json:"store"`
 }
 
-type OutputPlugins map[string]PluginConfig
+type OutputPlugin struct {
+	Id                   string `json:"id"`
+	Name                 string `json:"name"`
+	Version              string `json:"version"`
+	Archive              string `json:"archive"`
+	Sha256               string `json:"sha256"`
+	MinCrankshaftVersion string `json:"minCrankshaftVersion"`
+
+	Link   string `json:"link"`
+	Source string `json:"source"`
+
+	Author author `json:"author"`
+
+	Store store `json:"store"`
+}
+
+type OutputPlugins map[string]OutputPlugin
 
 func main() {
 	if err := run(); err != nil {
@@ -113,7 +138,26 @@ func run() error {
 			return err
 		}
 
-		outputPlugins[plugin.Id] = pluginConfig
+		outputPlugins[plugin.Id] = OutputPlugin{
+			Id:                   plugin.Id,
+			Name:                 pluginConfig.Name,
+			Version:              plugin.Version,
+			Archive:              plugin.Archive,
+			Sha256:               plugin.Sha256,
+			MinCrankshaftVersion: pluginConfig.MinCrankshaftVersion,
+
+			Link:   pluginConfig.Link,
+			Source: pluginConfig.Source,
+
+			Author: author{
+				Name: pluginConfig.Author.Name,
+				Link: pluginConfig.Author.Link,
+			},
+
+			Store: store{
+				Description: pluginConfig.Store.Description,
+			},
+		}
 	}
 
 	outputBytes, err := json.MarshalIndent(outputPlugins, "", "  ")
