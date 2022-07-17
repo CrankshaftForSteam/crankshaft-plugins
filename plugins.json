@@ -74,6 +74,19 @@
 			"author": "Derek J. Clark",
 			"minCrankshaftVersion": "0.1.5",
 			"source": "https://github.com/ShadowBlip/HandyPT"
+		},
+		{
+			"id": "proton-tools",
+			"repo": "https://git.sr.ht/~avery/proton-tools",
+
+			"version": "0.1.1",
+			"archive": "https://git.sr.ht/~avery/proton-tools/refs/download/0.1.1/proton-tools-0.1.1.tar.gz",
+			"sha256": "e1f17b75cd3e88a9f267d23b7e613c215d55aba473872adc65a961566ce4e629",
+
+			"name": "Proton Tools",
+			"author": "Avery",
+			"minCrankshaftVersion": "0.2.1",
+			"source": "https://git.sr.ht/~avery/proton-tools"
 		}
 	]
 }
