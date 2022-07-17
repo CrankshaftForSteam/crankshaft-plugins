@@ -53,9 +53,9 @@
 			"repo": "https://git.sr.ht/~avery/recapture",
 			"pluginConfigPath": "plugin/plugin.toml",
 
-			"version": "0.1.2",
-			"archive": "https://git.sr.ht/~avery/recapture/refs/download/plugin-0.1.2/recapture-0.1.2.tar.gz",
-			"sha256": "0bb68ecbebe81de247449625dd6ef315543204cdcbaa9a75ba69413f29c202d7",
+			"version": "0.1.3",
+			"archive": "https://git.sr.ht/~avery/recapture/refs/download/plugin-0.1.3/recapture-0.1.3.tar.gz",
+			"sha256": "8703f6ef46c32f4042cd431dd9c0e8b13de1ec0d130a63b78c4ed8e36622f9bb",
 
 			"name": "Recapture",
 			"author": "Avery",
