@@ -37,18 +37,6 @@
 			"source": "https://git.sr.ht/~avery/improved-lock-screen"
 		},
 		{
-			"id": "battery-percentage",
-			"repo": "https://git.sr.ht/~avery/battery-percentage",
-
-			"version": "1",
-			"archive": "https://git.sr.ht/~avery/battery-percentage/refs/download/1/battery-percentage-1.tar.gz",
-			"sha256": "715db15bc98f5d5de9b2d402a529195028685dbb6260b00d6c14f12b97e2051b",
-
-			"name": "Battery Percentage",
-			"author": "Avery",
-			"source": "https://git.sr.ht/~avery/battery-percentage"
-		},
-		{
 			"id": "recapture",
 			"repo": "https://git.sr.ht/~avery/recapture",
 			"pluginConfigPath": "plugin/plugin.toml",
