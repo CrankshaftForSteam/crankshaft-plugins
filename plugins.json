@@ -75,6 +75,19 @@
 			"author": "Avery",
 			"minCrankshaftVersion": "0.2.1",
 			"source": "https://git.sr.ht/~avery/proton-tools"
+		},
+		{
+			"id": "custom-library-tabs",
+			"repo": "https://git.sr.ht/~avery/custom-library-tabs",
+
+			"version": "0.2.1",
+			"archive": "https://git.sr.ht/~avery/custom-library-tabs/refs/download/0.1/custom-library-tabs-0.1.tar.gz",
+			"sha256": "fa7fd407e82f49a17badedc87148e5abb91dc536ee6543a4a9fb39d4a87539c1",
+
+			"name": "Custom Library Tabs",
+			"author": "Avery",
+			"minCrankshaftVersion": "0.2.1",
+			"source": "https://git.sr.ht/~avery/custom-library-tabs"
 		}
 	]
 }
