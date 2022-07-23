@@ -2,6 +2,7 @@ image: archlinux
 packages:
   - go
   - lftp
+  - wget
 sources:
   - https://git.sr.ht/~avery/crankshaft-plugins
 secrets:
