@@ -3,15 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io"
+	"io/ioutil"
 	"log"
 	"os"
+	"os/exec"
+	"path"
 	"strings"
 
 	"github.com/BurntSushi/toml"
-	"github.com/go-git/go-billy/v5/memfs"
-	"github.com/go-git/go-git/v5"
-	"github.com/go-git/go-git/v5/storage/memory"
 )
 
 type InputPlugin struct {
@@ -24,6 +23,7 @@ type InputPlugin struct {
 	Sha256  string `json:"sha256"`
 
 	Source string `json:"source"`
+	Name   string `json:"name"`
 }
 
 type InputFile struct {
@@ -92,49 +92,51 @@ func run() error {
 	inputPlugins := input.Plugins
 	outputPlugins := make(OutputPlugins)
 
+	downloadsDir, err := ioutil.TempDir("", "plugin-downloads")
+	if err != nil {
+		return err
+	}
+	defer os.RemoveAll(downloadsDir)
+
 	for _, plugin := range inputPlugins {
-
-		// TODO: only checkout plugin.toml
-		// couldn't figure out how to checkout one file after cloning with NoCheckout
-		// (could probably just use git tbh)
-
-		fs := memfs.New()
-
-		cloneUrl := plugin.Repo
-		if cloneUrl == "" {
-			cloneUrl = plugin.Source
-		}
-
-		fmt.Printf("Cloning %s from %s\n", plugin.Id, cloneUrl)
-
-		_, err = git.Clone(memory.NewStorage(), fs, &git.CloneOptions{
-			URL: cloneUrl,
-			// NoCheckout: true,
-			Depth: 1,
-		})
+		downloadPath := path.Join(downloadsDir, plugin.Id+".tar.gz")
+		fmt.Printf("%s: Downloading to %s\n", plugin.Id, downloadPath)
+		err := exec.Command("wget", plugin.Archive, "-O", downloadPath).Run()
 		if err != nil {
 			return err
 		}
 
-		pluginConfigPath := plugin.PluginConfigPath
-		if pluginConfigPath == "" {
-			pluginConfigPath = "plugin.toml"
+		fmt.Printf("%s: Validating checksum\n", plugin.Id)
+		sha256Bytes, err := exec.Command("sha256sum", downloadPath).Output()
+		if err != nil {
+			return err
+		}
+		sha256 := strings.Split(strings.TrimSpace(string(sha256Bytes)), " ")[0]
+		if sha256 != plugin.Sha256 {
+			return fmt.Errorf("Checksum for %s does not match!", plugin.Id)
 		}
 
-		pluginConfigFile, err := fs.Open(pluginConfigPath)
+		fmt.Printf("%s: Extracting\n", plugin.Id)
+		err = exec.Command("tar", "-xf", downloadPath, "-C", downloadsDir).Run()
 		if err != nil {
 			return err
 		}
 
-		buf := new(strings.Builder)
-		_, err = io.Copy(buf, pluginConfigFile)
+		fmt.Printf("%s: Deleting archive\n", plugin.Id)
+		err = exec.Command("rm", downloadPath).Run()
 		if err != nil {
 			return err
 		}
-		pluginConfigString := buf.String()
+
+		pluginPath := path.Join(downloadsDir, plugin.Id)
+
+		pluginConfigBytes, err := ioutil.ReadFile(path.Join(pluginPath, "plugin.toml"))
+		if err != nil {
+			return err
+		}
 
 		var pluginConfig PluginConfig
-		if _, err := toml.Decode(pluginConfigString, &pluginConfig); err != nil {
+		if _, err := toml.Decode(string(pluginConfigBytes), &pluginConfig); err != nil {
 			return err
 		}
 
@@ -158,6 +160,15 @@ func run() error {
 				Description: pluginConfig.Store.Description,
 			},
 		}
+
+		// Temporary override now that plugin properties come from archive
+		if plugin.Id == "HandyPT" {
+			p := outputPlugins[plugin.Id]
+			p.Name = plugin.Name
+			outputPlugins[plugin.Id] = p
+		}
+		
+		os.RemoveAll(pluginPath)
 	}
 
 	outputBytes, err := json.MarshalIndent(outputPlugins, "", "  ")
