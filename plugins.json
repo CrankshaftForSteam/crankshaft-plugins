@@ -88,6 +88,19 @@
 			"author": "Avery",
 			"minCrankshaftVersion": "0.2.1",
 			"source": "https://git.sr.ht/~avery/custom-library-tabs"
+		},
+		{
+			"id": "steamdeckhq-crankshaft-plugin",
+			"repo": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin",
+
+			"version": "0.3.0",
+			"archive": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin/raw/main/download/0.3.0/steamdeckhq-crankshaft-plugin-v0.3.0.tar.gz",
+			"sha256": "be2db3823fa637be311fe9500bea15a5fb50be3457cc0799866fab31e0372603",
+
+			"name": "SDHQ Ratings Indicator",
+			"author": "SDHQ",
+			"minCrankshaftVersion": "0.2.1",
+			"source": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin"
 		}
 	]
 }
