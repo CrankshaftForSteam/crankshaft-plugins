@@ -94,8 +94,8 @@
 			"repo": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin",
 
 			"version": "0.2.0",
-			"archive": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin/blob/main/download/0.2.0/steamdeckhq-crankshaft-plugin.tar.gz",
-			"sha256": "d93a70b172e9cc88c21a3c05d0c3b563103f0460b79cd016b0cb4fe1c2d8092b",
+			"archive": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin/raw/main/download/0.2.0/steamdeckhq-crankshaft-plugin-v0.2.0.tar.gz",
+			"sha256": "d727156c388ad35b451ff55f6ee4a5e1dbd905fe2967c285adbcfb2ca4aa94b5",
 
 			"name": "SDHQ Rating Indicator",
 			"author": "SDHQ",
