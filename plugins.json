@@ -101,6 +101,19 @@
 			"author": "SDHQ",
 			"minCrankshaftVersion": "0.2.1",
 			"source": "https://github.com/shelbykleindesign/steamdeckhq-crankshaft-plugin"
+		},
+		{
+			"id": "crankshaft-flathub",
+			"repo": "https://github.com/ShadowBlip/crankshaft-flathub",
+
+			"version": "1.0.0",
+			"archive": "https://github.com/ShadowBlip/crankshaft-flathub/releases/download/v1.0.0/crankshaft-flathub-v1.0.0.tar.gz",
+			"sha256": "b49ada79ca7ca381968eb0f6dbdf7f0fda3182536f8bdca9693b0225f0aefa56",
+			
+			"name": "Flathub",
+			"author": "William Edwards",
+			"minCrankshaftVersion": "0.1.5",
+			"source": "https://github.com/ShadowBlip/crankshaft-flathub"
 		}
 	]
 }
