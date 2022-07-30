@@ -106,13 +106,12 @@
 			"id": "crankshaft-flathub",
 			"repo": "https://github.com/ShadowBlip/crankshaft-flathub",
 
-			"version": "1.0.0",
-			"archive": "https://github.com/ShadowBlip/crankshaft-flathub/releases/download/v1.0.0/crankshaft-flathub-v1.0.0.tar.gz",
-			"sha256": "73f3ccdb4e40929c56fe09a59d5ebbc98f6118fe55fe40ae48cbe15f43534188",
-			
+			"version": "1.1.0",
+			"archive": "https://github.com/ShadowBlip/crankshaft-flathub/releases/download/v1.1.0/crankshaft-flathub-v1.1.0.tar.gz",
+			"sha256": "a62fee09cc1b67c811d3f8d0011649392e4d3624e46a8c891c78df279998a049",
 			"name": "Flathub",
 			"author": "William Edwards",
-			"minCrankshaftVersion": "0.1.5",
+			"minCrankshaftVersion": "0.2.1",
 			"source": "https://github.com/ShadowBlip/crankshaft-flathub"
 		}
 	]
