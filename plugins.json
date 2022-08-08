@@ -113,6 +113,42 @@
 			"author": "William Edwards",
 			"minCrankshaftVersion": "0.2.2",
 			"source": "https://github.com/ShadowBlip/crankshaft-flathub"
+		},
+		{
+			"id": "crankshaft-fontdeck",
+			"repo": "https://github.com/ZeroPoke/crankshaft-fontdeck",
+
+			"version": "1.0.0",
+			"archive": "https://github.com/ZeroPoke/crankshaft-fontdeck/releases/download/release/crankshaft-fontdeck-1.0.0.tar.gz",
+			"sha256": "E694EED00129E78FDAC66A8E3C63611301EB01796EE5040E1D0B1833302D4E0F",
+			"name": "FontDeck",
+			"author": "ZeroPoke",
+			"minCrankshaftVersion": "0.2.2",
+			"source": "https://github.com/ZeroPoke/crankshaft-fontdeck"
+		},
+		{
+			"id": "crankshaft-cleardeck",
+			"repo": "https://github.com/ZeroPoke/crankshaft-cleardeck",
+
+			"version": "1.0.0",
+			"archive": "https://github.com/ZeroPoke/crankshaft-cleardeck/releases/download/release/crankshaft-cleardeck-1.0.0.tar.gz",
+			"sha256": "5B77E091D36604826D84EB686EF24CAC160F193BDD860DFF9062DC63F5DC8F5F",
+			"name": "ClearDeck",
+			"author": "ZeroPoke",
+			"minCrankshaftVersion": "0.2.2",
+			"source": "ttps://github.com/ZeroPoke/crankshaft-cleardeck"
+		},
+		{
+			"id": "crankshaft-roundeck",
+			"repo": "https://github.com/ZeroPoke/crankshaft-roundeck",
+
+			"version": "1.0.0",
+			"archive": "https://github.com/ZeroPoke/crankshaft-roundeck/releases/download/release/crankshaft-roundeck-1.0.0.tar.gz",
+			"sha256": "58784E983ED78056C7E91BD4D94CE5F10DA41727F5DFD23BB59587E7F1A6776F",
+			"name": "RounDeck",
+			"author": "ZeroPoke",
+			"minCrankshaftVersion": "0.2.2",
+			"source": "https://github.com/ZeroPoke/crankshaft-roundeck"
 		}
 	]
 }
