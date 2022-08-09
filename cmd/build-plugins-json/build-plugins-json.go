@@ -112,7 +112,7 @@ func run() error {
 			return err
 		}
 		sha256 := strings.Split(strings.TrimSpace(string(sha256Bytes)), " ")[0]
-		if sha256 != plugin.Sha256 {
+		if strings.ToLower(sha256) != strings.ToLower(plugin.Sha256) {
 			return fmt.Errorf("Checksum for %s does not match!", plugin.Id)
 		}
 
