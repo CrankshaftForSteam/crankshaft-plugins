@@ -16,12 +16,12 @@
 			"id": "compatibility-tools-manager",
 			"repo": "https://git.sr.ht/~avery/compatibility-tools-manager",
 
-			"version": "0.4.0",
-			"archive": "https://git.sr.ht/~avery/compatibility-tools-manager/refs/download/0.4.0/compatibility-tools-manager-0.4.0.tar.gz",
-			"sha256": "77762580291ecceeb69dc7ed3f735a3c02c295f9aefaebdaa4ca554569b9578f",
+			"version": "0.5.0",
+			"archive": "https://git.sr.ht/~avery/compatibility-tools-manager/refs/download/0.5.0/compatibility-tools-manager-0.5.0.tar.gz",
+			"sha256": "3d83fd4772dc164077f3bf7e64c5ab0116d728e4b0391f1d29ed2e90b924df57",
 
 			"name": "Compatibility Tools Manager",
-			"author": "Avery",
+			"author": "Avery, hking0036",
 			"source": "https://git.sr.ht/~avery/compatibility-tools-manager"
 		},
 		{
