@@ -37,8 +37,19 @@ type author struct {
 	Link string `toml:"link" json:"link"`
 }
 
+type platform struct {
+	Supported bool `toml:"supported" json:"supported"`
+}
+
+type platforms struct {
+	Linux   platform `toml:"linux" json:"linux"`
+	Windows platform `toml:"windows" json:"windows"`
+	Mac     platform `toml:"mac" json:"mac"`
+}
+
 type store struct {
-	Description string `toml:"description" json:"description"`
+	Description string    `toml:"description" json:"description"`
+	Platforms   platforms `toml:"platforms" json:"platforms"`
 }
 
 type PluginConfig struct {
@@ -136,8 +147,18 @@ func run() error {
 		}
 
 		var pluginConfig PluginConfig
-		if _, err := toml.Decode(string(pluginConfigBytes), &pluginConfig); err != nil {
+		pluginConfigMd, err := toml.Decode(string(pluginConfigBytes), &pluginConfig)
+		if err != nil {
 			return err
+		}
+
+		// Default to only Linux support if plugin config was missing platforms
+		if !pluginConfigMd.IsDefined("store", "platforms") {
+			pluginConfig.Store.Platforms = platforms{
+				Linux:   platform{true},
+				Windows: platform{false},
+				Mac:     platform{false},
+			}
 		}
 
 		outputPlugins[plugin.Id] = OutputPlugin{
@@ -158,16 +179,10 @@ func run() error {
 
 			Store: store{
 				Description: pluginConfig.Store.Description,
+				Platforms:   pluginConfig.Store.Platforms,
 			},
 		}
 
-		// Temporary override now that plugin properties come from archive
-		if plugin.Id == "HandyPT" {
-			p := outputPlugins[plugin.Id]
-			p.Name = plugin.Name
-			outputPlugins[plugin.Id] = p
-		}
-		
 		os.RemoveAll(pluginPath)
 	}
 
