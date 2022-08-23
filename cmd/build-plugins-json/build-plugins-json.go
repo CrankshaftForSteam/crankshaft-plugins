@@ -44,7 +44,7 @@ type platform struct {
 type platforms struct {
 	Linux   platform `toml:"linux" json:"linux"`
 	Windows platform `toml:"windows" json:"windows"`
-	Mac     platform `toml:"mac" json:"mac"`
+	Darwin     platform `toml:"darwin" json:"darwin"`
 }
 
 type store struct {
@@ -157,7 +157,7 @@ func run() error {
 			pluginConfig.Store.Platforms = platforms{
 				Linux:   platform{true},
 				Windows: platform{false},
-				Mac:     platform{false},
+				Darwin:     platform{false},
 			}
 		}
 
