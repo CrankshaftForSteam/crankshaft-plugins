@@ -151,7 +151,7 @@
 			"source": "https://github.com/ZeroPoke/crankshaft-roundeck"
 		},
 		{
-			"id": "vibrant-crankshaft",
+			"id": "vibrantCrankshaft",
 			"repo": "https://github.com/ShadowBlip/vibrantCrankshaft",
 
 			"version": "1.0.0",
