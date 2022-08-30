@@ -154,9 +154,9 @@
 			"id": "vibrantCrankshaft",
 			"repo": "https://github.com/ShadowBlip/vibrantCrankshaft",
 
-			"version": "1.0.0",
-			"archive": "https://github.com/ShadowBlip/vibrantCrankshaft/releases/download/v1.0.0/vibrantCrankshaft-v1.0.0.tar.gz",
-			"sha256": "c7ab167136c1295c652fb2a4cd490fd0be6f47c0010f74c11563b745bdf1a093",
+			"version": "1.0.1",
+			"archive": "https://github.com/ShadowBlip/vibrantCrankshaft/releases/download/v1.0.1/vibrantCrankshaft-v1.0.1.tar.gz",
+			"sha256": "b7cc697e7afbb2741d4580541b370b5a9cb205b95ffd2b51029f3dc3b84ad4f8",
 			"name": "vibrantCrankshaft",
 			"author": "William Edwards",
 			"minCrankshaftVersion": "0.2.4",
