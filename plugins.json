@@ -54,13 +54,13 @@
 			"id": "HandyPT",
 			"repo": "https://github.com/ShadowBlip/HandyPT",
 
-			"version": "0.2.0",
-			"archive": "https://github.com/ShadowBlip/HandyPT/files/9332441/handypt-v0.2.0.tar.gz",
-			"sha256": "7e0ab3f9832effb6f459c5e97a7867c04b3994bf6b93e6e36defa02e176db746",
+			"version": "0.3.0",
+			"archive": "https://github.com/ShadowBlip/HandyPT/releases/download/v0.3.0/handypt-v0.3.0.tar.gz",
+			"sha256": "176f86b39de9406e8b0abf53f189e83e517df4630bacd7feee44feddcfb3ffd3",
 
 			"name": "Handheld Power Tools",
 			"author": "Derek J. Clark",
-			"minCrankshaftVersion": "0.2.1",
+			"minCrankshaftVersion": "0.2.4",
 			"source": "https://github.com/ShadowBlip/HandyPT"
 		},
 		{
